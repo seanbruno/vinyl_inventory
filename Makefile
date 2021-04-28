@@ -1,6 +1,6 @@
 OUTPUT_DIR=html
 
-all: inventory.html music_and_misc.html various_artists_comedy.html various_artists_radio_shows.html
+all: comedy_and_standup.html music_and_misc.html various_artists_comedy.html various_artists_radio_shows.html
 
 .SUFFIXES: .csv .html
 .csv.html:
