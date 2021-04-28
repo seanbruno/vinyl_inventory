@@ -31,7 +31,7 @@ def main(argv):
 	fd = pd.read_csv(input_csv)
 	
 	# Use the .to_html() to get your table in html
-	print(fd.to_html(output_html, index=False, na_rep=""))
+	print(fd.to_html(output_html, index=False, na_rep="", justify="center"))
 
 if __name__ == "__main__":
 	main(sys.argv[1:])
