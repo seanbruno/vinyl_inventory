@@ -28,10 +28,10 @@ def main(argv):
 
 
 	# Open the CSV for conversion
-	fd = pd.read_csv(input_csv, index_col=False)
+	fd = pd.read_csv(input_csv)
 	
 	# Use the .to_html() to get your table in html
-	print(fd.to_html(output_html))
+	print(fd.to_html(output_html, index=False, na_rep=""))
 
 if __name__ == "__main__":
 	main(sys.argv[1:])
